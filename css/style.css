@@ -1,0 +1,46 @@
+:root{
+    --main-background:#C7011A; 
+    --color2:#fefefe;
+}
+
+
+body{
+    font-family: "roboto",serif;
+    background-color:var(--main-background);
+    align-content: center;
+    text-align: center;
+    
+    
+    
+}
+.timer{
+
+    background: #FF7A59;
+    font-size: 2em;
+    width: 5em;
+    height: 5em;
+    border: 3px solid var(--color2);
+    border-radius: 50%;
+    border-color: whitesmoke;
+    color: white;
+    
+    margin: auto;
+    
+}
+span{
+
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    
+    
+    
+}
+
+button{
+    align-items: center;
+    border-radius: 5em;
+    border-color: whitesmoke;
+    color: whitesmoke;
+    background-color: var(--main-background);
+}
