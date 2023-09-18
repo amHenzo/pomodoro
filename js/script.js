@@ -7,8 +7,8 @@ let txtworking = document.querySelectorAll(".travail > p")
 //console.log(txtworking[0].textContent = "Teest")
 let isWorking = true;
 
-let workTime = 2;
-let restTime = 3;
+let workTime =1500;
+let restTime =300;
 let idInterval =0;
 console.log(button)
 
@@ -19,13 +19,15 @@ window.onload =(event)=>
 
 function start_timer()
 {
-    workTime = 2;
-    restTime = 3;
+    workTime = 1500;
+    restTime = 300;
 
     refreshtimer(workTime);
+    // so it dosen't start mutiple chrono a the same time
     clearInterval(idInterval);
     idInterval = setInterval(decrement, 1000);
     decrement();
+    // set the function stop to the button to start only one time 
     button.onclick = stop;
 }
 function stop()
@@ -33,6 +35,12 @@ function stop()
     window.location.reload()
 }
 
+
+/**
+ * if we are in working time decrement and display
+ * else do the same for resting time
+ *
+ */
 function decrement()
 {
     if(workTime !== 0)
@@ -65,13 +73,13 @@ function refreshtimer(time)
 {
     if(isWorking)
     {
-        txtworking[0].style.background = 'green'
-        txtworking[1].style.background = 'red'
+        txtworking[0].style.color = 'green'
+        txtworking[1].style.color = 'black'
     }
     else
     {
-        txtworking[0].style.background = 'red'
-        txtworking[1].style.background = 'green'
+        txtworking[0].style.color = 'black'
+        txtworking[1].style.color = 'green'
     }
     let timemin = parseInt(time/60,10)  ;
     let timesec = parseInt(time % 60, 10);
