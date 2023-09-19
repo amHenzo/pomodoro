@@ -12,7 +12,22 @@ h1{
     font-size: 5em;
     text-shadow: 2px 2px whitesmoke;
 }
+input{
+    background-color: inherit;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 1.5vw;
+    border-color: whitesmoke;
+    box-shadow: 2px 2px rgb(29, 28, 28);
+    -webkit-appearance: none;
+}
+.main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
 
+}
 
 body{
     font-family: "roboto",serif;
@@ -39,10 +54,8 @@ body{
     border-radius: 50%;
     border-color: whitesmoke;
     color: whitesmoke;
-
     max-width: 50vw;
     max-height: 50vw;
-
     box-shadow: 2px 2px rgb(29, 28, 28);
     box-sizing: border-box;
     
@@ -68,6 +81,7 @@ p{
     font-size: large;
     font-weight: bold;
     transition: linear all 0.25s;
+    text-shadow: 2px 2px rgb(29, 28, 28);
 }
 
 

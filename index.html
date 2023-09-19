@@ -10,6 +10,10 @@
     <body>
         <h1>Pomodoro</h1>
         <div class="main">
+            <form class="form">
+                <input type="number" onkeyup="isInputok()" id="workS" name="inputWork" value="25" aria-label ="Working time desired in min " />
+                <input type="number" onkeyup="isInputok()" id="WorkP" name="inputRes" value="5"  aria-label ="resting time desired in min"/>
+            </form>
             <div class="travail">
                 <p>
                     Travail
@@ -22,7 +26,7 @@
             <span class="min">25</span><span>:</span><span class="sec">00</span>
             </div>
         </div>
-        <button type="button" class="play" onclick="start_timer()">
+        <button type="button" class="play" onclick="start_timer()" aria-label ="press button to play or pause">
             <i class="fa-solid fa-play fa-2xl"></i>
         </button>
         <script src="https://kit.fontawesome.com/6fbd62e613.js" crossorigin="anonymous"></script>
