@@ -22,13 +22,16 @@ window.onload =(event)=>
         let saveRes = localStorage.getItem("saveResSec");
 
         workTime = parseInt(saveWork);
-        RestTime = parseInt(saveRes);
+        restTime = parseInt(saveRes);
+        inputWork.value = parseInt(workTime/60);
+        inputRes.value  = parseInt(restTime/60);
     }
     refreshtimer(workTime);
 }
 
 function start_timer()
 {
+
 
     refreshtimer(workTime);
     // so it dosen't start mutiple chrono a the same time
@@ -68,8 +71,7 @@ function decrement()
         }
     }
     // save time
-    localStorage.setItem("saveWorkSec",workTime);
-    localStorage.setItem("saveResSec",restTime);
+    
     
 }
 
@@ -111,6 +113,9 @@ function isInputok()
     
     workTime = inputWork.value*60;
     restTime = inputRes.value*60;
+    localStorage.setItem("saveWorkSec",workTime);
+    localStorage.setItem("saveResSec",restTime);
+
     refreshtimer(workTime);
     
 }
