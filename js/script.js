@@ -31,8 +31,6 @@ window.onload =(event)=>
 
 function start_timer()
 {
-
-
     refreshtimer(workTime);
     // so it dosen't start mutiple chrono a the same time
     clearInterval(idInterval);
@@ -45,7 +43,6 @@ function stop()
 {
     window.location.reload()
 }
-
 
 /**
  * if we are in working time decrement and display
