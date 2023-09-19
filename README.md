@@ -10,6 +10,8 @@ Pomodoro est une application de gestion du temps basée sur la technique Pomodor
 
 - Compte à rebours de 25 minutes pour chaque pomodoro
 - Pause automatique de 5 minutes entre chaque pomodoro
+- sauvegarde du temps de travail et de pause
+- possibilité de changer de temps de travail et de pause 
 
 ## Installation
 
@@ -27,7 +29,7 @@ git clone https://github.com/amHenzo/pomodoro.git
 3. Cliquez sur le bouton "play" pour commencer un pomodoro.
 4. Travaillez sans interruption jusqu'à ce que le compte à rebours atteigne zéro.
 5. Prenez une courte pause lorsque le pomodoro est terminé, d'une durée de base de 5 minutees
-6. le pomodoro reprends de 25 minutes en boucle
+6. le pomodoro reprends de 25 minutes en boucle par défault
 
 
 
