@@ -16,7 +16,7 @@ input{
     background-color: inherit;
     border-radius: 50px;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 1.5em;
     border-color: whitesmoke;
     box-shadow: 2px 2px rgb(29, 28, 28);
 }
@@ -33,7 +33,6 @@ body{
     background-color:var(--main-background);
     align-content: center;
     text-align: center;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,7 +79,6 @@ p{
     font-size: large;
     font-weight: bold;
     transition: linear all 0.25s;
-    text-shadow: 2px 2px rgb(29, 28, 28);
 }
 
 

@@ -81,7 +81,8 @@ function refreshtimer(time)
 {
     if(isWorking)
     {
-        txtworking[0].style.color = 'limegreen'
+        txtworking[0].style.color = 'black'
+        txtworking[0].style.backgroundColor = 'green'
         txtworking[1].style.color = 'white'
     }
     else
